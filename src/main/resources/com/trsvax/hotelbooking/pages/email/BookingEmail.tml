@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en" 
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+<body>
+	<h2>Booking Confirmation</h2>
+    <t:beandisplay object="booking"/>
+    
+    <t:eventlink event="send">send</t:eventlink>
+</body>
+</html>

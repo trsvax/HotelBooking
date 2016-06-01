@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" t:type="layout"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+<body>
+
+<t:beaneditform object="this" >
+<p:beanedittemplate.template>
+<property name="username"/>
+<property name="password"/>
+</p:beanedittemplate.template>
+</t:beaneditform>
+
+</body>
+
+</html>

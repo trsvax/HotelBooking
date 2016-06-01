@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" t:type="layout"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+<body>
+
+
+<h1>Hotels</h1>
+
+<t:grid source="hotels" add="book" row="hotel">
+<p:bookCell>
+	<t:pagelink page="hotel/booking/new" context="hotel" >Book</t:pagelink>
+</p:bookCell>
+</t:grid>
+
+</body>
+
+</html>

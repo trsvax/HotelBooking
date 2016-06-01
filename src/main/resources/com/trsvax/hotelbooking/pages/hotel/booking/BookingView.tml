@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html
+    xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+    xmlns:p="tapestry:parameter">
+    
+    <h1>View</h1>
+    view ${status}
+    
+    <t:beandisplay object="booking"/>
+    
+</html>

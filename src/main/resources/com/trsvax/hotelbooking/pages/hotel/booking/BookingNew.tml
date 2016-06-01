@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" t:type="layout"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+<body>
+
+<h1>Book</h1>
+<t:beaneditform t:id="form" object="booking" exclude="bookingDate" >
+<p:beanEditTemplate.template>
+<property name="checkinDate"/>
+<property name="checkoutDate"/>
+<property name="smoking"/>
+<property name="beds"/>
+<property name="creditCardName"/>
+<property name="creditCardType"/>
+<property name="creditCardNumber"/>
+<property name="creditCardExpiryMonth"/>
+<property name="creditCardExpiryYear"/>
+</p:beanEditTemplate.template>
+</t:beaneditform>
+
+<t:bookings rowsPerPage="1" row="row" title="Bookings" add="view">
+<p:viewCell><t:pagelink page="hotel/booking/view" context="row">view</t:pagelink></p:viewCell>
+</t:bookings>
+
+</body>
+
+</html>
